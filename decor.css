@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(243, 243, 57);
+}
+
+head {
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+ol {
+  background: lightskyblue;
+  padding: 10px;
+  text-align: center;
+}
+
+div a {
+  background: #1e3a5f;
+  padding-right: 1192.5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+div{
+    margin-top: 50px;
+}
+
+a {
+  color: rgb(255, 48, 48);
+  margin: 20px auto;
+}
+
+
+
