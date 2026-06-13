@@ -59,6 +59,8 @@ nav a {
   text-decoration: none;
   margin: 0 10px;
 }
-#e{
-    float: left;
+.e{
+    display: block;
+    top: 15px;
+    margin-right: none;
 }
