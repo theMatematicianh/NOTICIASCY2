@@ -2,8 +2,9 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: lab(14.53% 18.26 -38.61);
-    padding: 10px;
+    background-color: hsl(214, 52%, 25%);
+    padding: 2px;
+    border-bottom: 16px solid rgb(61, 61, 61);
 }
 
 .menu-direita {
@@ -12,12 +13,18 @@ nav {
     align-items: center;
 }
 
+.titulo {
+    color: white;
+    margin: 0;
+     text-align: center;
+}
 body {
     padding-top: 60px;
     margin: 0;
 }
+
 footer {
-    background-color: lab(14.53% 18.26 -38.61);
+    background-color: lab(28.66% 45.11 -75.96);
     color: white;
     padding: 20px;
     margin-top: 200px;
