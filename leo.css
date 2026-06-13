@@ -62,14 +62,3 @@ nav a {
 .e{
     float: right;
 }
-footer{
-    margin: 0;
-    background-color: darkred;
-    height: 200px;
-    padding: 0;
-    display: flex;
-    text-align: center;
-}
-p{
-    text-align: center;
-}
