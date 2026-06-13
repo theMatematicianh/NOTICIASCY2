@@ -2,9 +2,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: hsl(214, 52%, 25%);
+    background-color:#333333;
     padding: 2px;
-    border-bottom: 16px solid rgb(61, 61, 61);
 }
 
 .titulo {
