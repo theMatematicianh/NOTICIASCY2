@@ -59,6 +59,9 @@ nav a {
   text-decoration: none;
   margin: 0 10px;
 }
+nav a:hover{
+    background: red;
+}
 .e{
     float: right;
 }
