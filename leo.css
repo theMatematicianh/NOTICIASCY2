@@ -26,3 +26,26 @@ a{
 a:hover{
     font-size: xx-large;
 }
+add{
+    margin: 5px;
+}
+.but{
+    width: 100px;
+}
+.buttons{
+    line-height: 100px;
+}
+#butt{
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    border-radius: 5%;
+    box-shadow: none;
+}
+#score{
+    font-size: 50px;
+    text-align: center;
+}

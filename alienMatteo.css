@@ -1,13 +1,18 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(bottom, blue, blue)
+  background-image: linear-gradient(to bottom, blue, blueviolet);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-header {
+}
+
+header{
   background: #1e3a5f;
   color: white;
   text-align: center;
   padding: 20px;
+  background: #0be0ab;
 }
 nav {
   background: #333;
@@ -18,4 +23,8 @@ nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
+}
+.footer{
+  background-color: #0be0ab;
+  margin-bottom: 10px;
 }
