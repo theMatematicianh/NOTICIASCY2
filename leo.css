@@ -60,7 +60,5 @@ nav a {
   margin: 0 10px;
 }
 .e{
-    display: block;
-    top: 15px;
-    margin-right: none;
+    float: right;
 }
