@@ -1,6 +1,8 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
   background: #f0f0f0;
 }
 
@@ -13,14 +15,36 @@ header {
 
 nav {
   background: #333;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
 }
 
-nav a {
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 23px;
   text-decoration: none;
-  margin: 0 10px;
+}
+
+ul li a:hover {
+  background-color: #111111;
 }
 
 main {
