@@ -14,6 +14,7 @@ else
 {
     alert("Idade errada!!");
 
-      window.location.href = "bloqueado.html";
+      window.location.href = "aula.html";
+
       
 }
