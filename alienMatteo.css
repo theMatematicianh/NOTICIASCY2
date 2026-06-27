@@ -4,6 +4,7 @@ body {
   background-image: linear-gradient(to bottom, blue, blueviolet);
   background-repeat: no-repeat;
   background-attachment: fixed;
+    color: beige;
 
 }
 
@@ -14,18 +15,22 @@ nav {
   text-align: center;
 }
 
-#noticiasAlien{
+#noticiasAlien {
   background: #1e3a5f;
-  color: white;
-}
-.footer {
-  background: #1e3a5f;
-  color: white;
-  text-align: center;
-  padding: 10px;
+  color: beige;
 }
 
-h2, p {
+footer {
+  background-color: #10133b;
+  color: beige;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+h2,
+p {
   margin: 10px;
 }
 
