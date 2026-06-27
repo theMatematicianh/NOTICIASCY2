@@ -7,24 +7,48 @@ body {
 
 }
 
-header{
-  background: #1e3a5f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  background: #0be0ab;
-}
+
 nav {
-  background: #333;
+  background: #0be0ab;
   padding: 10px;
   text-align: center;
 }
-nav a {
+
+#noticiasAlien{
+  background: #1e3a5f;
   color: white;
-  text-decoration: none;
-  margin: 0 10px;
 }
-.footer{
+.footer {
+  background: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background-color: #0be0ab;
-  margin-bottom: 10px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 23px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: purple;
 }
