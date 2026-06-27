@@ -1,71 +1,157 @@
+/* 1. Reset Básico: Garante que os tamanhos fiquem consistentes em todos os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Variáveis de Cores (Opcional, mas ótimo para ensinar os alunos a organizarem cores) */
+:root {
+  --cor-fundo: #f4f7f6;
+  --cor-texto: #333333;
+  --cor-primaria: #1e3a5f;
+  --cor-secundaria: #3a6ea5;
+  --cor-destaque: #ffffff;
+}
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f0f0f0;
+  font-family: 'Inter', Arial, sans-serif; /* Fonte mais moderna */
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
 }
 
+/* Cabeçalho com Gradiente */
 header {
-  background: hsl(214, 52%, 25%);
-  color: white;
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  color: var(--cor-destaque);
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Menu de Navegação Flexbox (Substitui o float) */
+/* --- NOVA ESTRUTURA DA BARRA DE NAVEGAÇÃO --- */
 
 nav {
-  background: #333;
-  padding: 8px;
-  text-align: center;
+  background: #222222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
-h2, p {
-  margin: 10px;
+/* Esse container organiza o espaço do topo */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Alinha o logo na extrema esquerda e os links na extrema direita */
+  align-items: center;           /* Alinha o logo e os textos perfeitamente no centro (vertical) */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;            /* Dá um respiro interno para não colar nas bordas do navegador */
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a {
+/* Controla o tamanho e o formato do logo */
+.logo {
+  height: 45px;                  /* Altura fixa para manter o padrão */
+  width: auto;                   /* Mantém a proporção da imagem sem distorcer */
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 23px;
+}
+
+/* Organiza apenas a lista de links */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;                      /* Cria um espaçamento padrão e idêntico entre cada botão */
+}
+
+.nav-menu li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 16px;
   text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;            /* Deixa os cantos do botão levemente arredondados no efeito hover */
+  transition: background-color 0.3s ease;
 }
 
-ul li a:hover {
-  background-color: #111111;
+/* Efeito ao passar o mouse */
+.nav-menu li a:hover {
+  background-color: #3a6ea5;     /* Azul moderno para o destaque */
 }
-
+/* Área Principal */
 main {
-  width: 80%;
-  margin: 20px auto;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espaço entre os artigos */
 }
 
+/* Estilo de Cartão (Card) para as Notícias */
 .noticia {
-  background: white;
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 5px;
+  background: var(--cor-destaque);
+  border-radius: 12px;
+  overflow: hidden; /* Garante que a imagem não vaze das bordas arredondadas */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de flutuar ao passar o mouse na notícia */
+.noticia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .noticia img {
   width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid var(--cor-secundaria);
 }
 
+.conteudo-noticia {
+  padding: 25px;
+}
+
+.conteudo-noticia h2 {
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+}
+
+.conteudo-noticia p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Botões modernos */
+.btn-leia-mais {
+  display: inline-block;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+  background-color: var(--cor-primaria);
+}
+
+/* Rodapé Limpo */
 footer {
-  background: #1e3a5f;
-  color: white;
+  background: #111111;
+  color: #aaaaaa;
   text-align: center;
-  padding: 10px;
+  padding: 25px;
+  margin-top: 50px;
 }
