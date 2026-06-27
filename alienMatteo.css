@@ -57,3 +57,10 @@ ul li a {
 ul li a:hover {
   background-color: purple;
 }
+title {
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  color: var(--cor-destaque);
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
