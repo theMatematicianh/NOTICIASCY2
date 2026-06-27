@@ -1,11 +1,11 @@
-/* 1. Reset Básico: Garante que os tamanhos fiquem consistentes em todos os navegadores */
+/* 1. Reset Básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. Variáveis de Cores (Opcional, mas ótimo para ensinar os alunos a organizarem cores) */
+/* 2. Variáveis de Cores */
 :root {
   --cor-fundo: #f4f7f6;
   --cor-texto: #333333;
@@ -15,13 +15,13 @@
 }
 
 body {
-  font-family: 'Inter', Arial, sans-serif; /* Fonte mais moderna */
+  font-family: 'Inter', Arial, sans-serif;
   background: var(--cor-fundo);
   color: var(--cor-texto);
   line-height: 1.6;
 }
 
-/* Cabeçalho com Gradiente */
+/* Cabeçalho */
 header {
   background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
   color: var(--cor-destaque);
@@ -35,8 +35,9 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* Menu de Navegação Flexbox (Substitui o float) */
-/* --- NOVA ESTRUTURA DA BARRA DE NAVEGAÇÃO --- */
+/* ===========================
+   BARRA DE NAVEGAÇÃO
+=========================== */
 
 nav {
   background: #222222;
@@ -46,29 +47,38 @@ nav {
   width: 100%;
 }
 
-/* Esse container organiza o espaço do topo */
 .nav-container {
-  display: flex;
-  justify-content: space-between; /* Alinha o logo na extrema esquerda e os links na extrema direita */
-  align-items: center;           /* Alinha o logo e os textos perfeitamente no centro (vertical) */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;            /* Dá um respiro interno para não colar nas bordas do navegador */
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-/* Controla o tamanho e o formato do logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  height: 45px;                  /* Altura fixa para manter o padrão */
-  width: auto;                   /* Mantém a proporção da imagem sem distorcer */
+  height: 45px;
+  width: auto;
   display: block;
 }
 
-/* Organiza apenas a lista de links */
 .nav-menu {
-  list-style-type: none;
+  list-style: none;
   display: flex;
   align-items: center;
-  gap: 5px;                      /* Cria um espaçamento padrão e idêntico entre cada botão */
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  list-style: none;
 }
 
 .nav-menu li a {
@@ -77,37 +87,38 @@ nav {
   padding: 10px 16px;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 6px;            /* Deixa os cantos do botão levemente arredondados no efeito hover */
+  border-radius: 6px;
   transition: background-color 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .nav-menu li a:hover {
-  background-color: #3a6ea5;     /* Azul moderno para o destaque */
+  background-color: var(--cor-secundaria);
 }
+
 /* Área Principal */
+
 main {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 30px; /* Espaço entre os artigos */
+  gap: 30px;
 }
 
-/* Estilo de Cartão (Card) para as Notícias */
+/* Notícias */
+
 .noticia {
   background: var(--cor-destaque);
   border-radius: 12px;
-  overflow: hidden; /* Garante que a imagem não vaze das bordas arredondadas */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito de flutuar ao passar o mouse na notícia */
 .noticia:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .noticia img {
@@ -131,7 +142,8 @@ main {
   margin-bottom: 20px;
 }
 
-/* Botões modernos */
+/* Botão */
+
 .btn-leia-mais {
   display: inline-block;
   background-color: var(--cor-secundaria);
@@ -147,7 +159,8 @@ main {
   background-color: var(--cor-primaria);
 }
 
-/* Rodapé Limpo */
+/* Rodapé */
+
 footer {
   background: #111111;
   color: #aaaaaa;
