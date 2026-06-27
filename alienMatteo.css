@@ -58,8 +58,8 @@ ul li a:hover {
   background-color: purple;
 }
 header{
-  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
-  color: var(--cor-destaque);
+  background: #0be0ab;
+  color: white;
   text-align: center;
   padding: 40px 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
