@@ -90,6 +90,77 @@ footer {
   bottom: 0px;
 }
 
+header {
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  color: var(--cor-destaque);
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   BARRA DE NAVEGAÇÃO
+=========================== */
+
+nav {
+  background: #222222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: var(--cor-secundaria);
+}
 
 
